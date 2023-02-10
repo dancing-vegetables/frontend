@@ -8,12 +8,14 @@ import Rank from '../pages/rank/Rank';
 import Signin from '../pages/signin/Signin';
 import Signup from '../pages/signup/Signup';
 import WatingRoom from '../pages/watingRoom/WatingRoom';
+import Main from '../pages/main/Main';
 
 export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Signin />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/lobby" element={<Lobby />} />
         <Route path="/watingroom" element={<WatingRoom />} />
